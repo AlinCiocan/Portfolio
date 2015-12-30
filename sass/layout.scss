@@ -5,6 +5,11 @@ $navigationMenuTextColor: #000;
 $primaryColor: #ffcb05;
 $secondaryColor: #f48473; 
 
+
+// galery colors
+$captionFirstColor: rgba($color: #c6198b, $alpha: 0.8);
+$captionSecondColor: rgba($color: #05acd3, $alpha: 0.8);
+
 .navigation-menu {
     
     &__link {
@@ -46,4 +51,49 @@ $secondaryColor: #f48473;
         }
     }
        
+}
+
+.gallery {
+    
+    &__image-container {
+        margin-left: 38px;
+        margin-right: 38px;
+        position: relative;
+        margin-bottom: 26px;
+    }
+    
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+    
+    &__captions-container {
+        font-size: 18px;
+        line-height: 18px;
+        font-family: $openSans;
+        letter-spacing: 3px;
+        text-align: center;
+        height: 38px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        
+        .gallery__image-container:nth-child(odd) & {
+            background-color: $captionFirstColor;        
+        }
+        
+        
+        .gallery__image-container:nth-child(even) & {
+            background-color: $captionSecondColor;        
+        }
+    }
+    
+    &__captions {
+        margin: 10px;
+        
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

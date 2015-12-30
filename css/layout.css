@@ -393,4 +393,33 @@ th {
   .navigation-menu__bar--second {
     background-color: #f48473; }
 
+.gallery__image-container {
+  margin-left: 38px;
+  margin-right: 38px;
+  position: relative;
+  margin-bottom: 26px; }
+.gallery__image {
+  width: 100%;
+  height: auto; }
+.gallery__captions-container {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Open Sans";
+  letter-spacing: 3px;
+  text-align: center;
+  height: 38px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white; }
+  .gallery__image-container:nth-child(odd) .gallery__captions-container {
+    background-color: rgba(198, 25, 139, 0.8); }
+  .gallery__image-container:nth-child(even) .gallery__captions-container {
+    background-color: rgba(5, 172, 211, 0.8); }
+.gallery__captions {
+  margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 /*# sourceMappingURL=layout.css.map */
