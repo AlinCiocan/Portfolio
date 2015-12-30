@@ -1,0 +1,18 @@
+$caledoBold: "CaledoBold";
+$caledoLight: "CaledoLight";
+
+
+@font-face {
+font-family: $caledoBold;
+src: url('../fonts/caledo/caledo_bold-webfont.eot');
+src: local('☺'), url('../fonts/caledo/caledo_bold-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/caledo/caledo_bold-webfont.woff') format('woff'),url('../fonts/caledo/caledo_bold-webfont.ttf') format('truetype'),url('../fonts/caledo/caledo_bold-webfont.svg#CaledoBold') format('svg');
+font-weight: normal;
+font-style: normal;}
+
+@font-face {
+font-family: $caledoLight;
+src: url('../fonts/caledo/caledo_light-webfont.eot');
+src: local('☺'), url('../fonts/caledo/caledo_light-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/caledo/caledo_light-webfont.woff') format('woff'),url('../fonts/caledo/caledo_light-webfont.ttf') format('truetype'),url('../fonts/caledo/caledo_light-webfont.svg#CaledoLight') format('svg');
+font-weight: normal;
+font-style: normal;}
+

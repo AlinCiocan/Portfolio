@@ -1,0 +1,39 @@
+@import "normalize";
+@import "fonts";
+
+$navigationMenuTextColor: #000;
+$primaryColor: #ffcb05;
+$secondaryColor: #f48473; 
+
+.navigation-menu {
+    
+    &__link {
+        font-size: 23px;
+        line-height: 23px;
+        letter-spacing: 3px;
+        font-family: $caledoBold;
+        color: $navigationMenuTextColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $secondaryColor;
+        
+        width: 50%;
+        height: 47px;
+        padding-top: 12px;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        
+        &--active {
+            background-color: $primaryColor;
+        }
+    }
+    
+    &__bar {
+        clear: both;
+        height: 9px;
+        background-color: $primaryColor;
+    }
+       
+}
