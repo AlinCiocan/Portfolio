@@ -375,18 +375,22 @@ th {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  background-color: #f48473;
   width: 50%;
   height: 47px;
   padding-top: 12px;
   display: block;
   float: left;
   box-sizing: border-box; }
-  .navigation-menu__link--active {
+  .navigation-menu__link--first {
     background-color: #ffcb05; }
+  .navigation-menu__link--second {
+    background-color: #f48473; }
 .navigation-menu__bar {
   clear: both;
-  height: 9px;
-  background-color: #ffcb05; }
+  height: 9px; }
+  .navigation-menu__bar--first {
+    background-color: #ffcb05; }
+  .navigation-menu__bar--second {
+    background-color: #f48473; }
 
 /*# sourceMappingURL=layout.css.map */

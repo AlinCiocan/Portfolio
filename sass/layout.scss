@@ -16,8 +16,7 @@ $secondaryColor: #f48473;
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        background-color: $secondaryColor;
-        
+                
         width: 50%;
         height: 47px;
         padding-top: 12px;
@@ -25,15 +24,26 @@ $secondaryColor: #f48473;
         float: left;
         box-sizing: border-box;
         
-        &--active {
+        &--first {
             background-color: $primaryColor;
+        }
+        
+        &--second {
+            background-color: $secondaryColor;
         }
     }
     
     &__bar {
         clear: both;
         height: 9px;
-        background-color: $primaryColor;
+        
+        &--first {
+            background-color: $primaryColor;
+        }
+        
+        &--second {
+            background-color: $secondaryColor;
+        }
     }
        
 }
