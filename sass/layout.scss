@@ -2,9 +2,11 @@
 @import "fonts";
 
 $navigationMenuTextColor: #000;
-$primaryColor: #ffcb05;
-$secondaryColor: #f48473; 
-
+$blogColor: #ad7cfc;
+$primaryLeftColor: #ffcb05;
+$blogTintColor:  rgba($color: #ad7cfc, $alpha: 0.8);
+$highlightColor: #c6198b;
+$primaryRightColor: #11b5c1;
 
 // galery colors
 $captionFirstColor: rgba($color: #c6198b, $alpha: 0.8);
@@ -13,10 +15,10 @@ $captionSecondColor: rgba($color: #05acd3, $alpha: 0.8);
 .navigation-menu {
     
     &__link {
-        font-size: 23px;
-        line-height: 23px;
+        font-size: 25px;
+        line-height: 25px;
         letter-spacing: 3px;
-        font-family: $caledoBold;
+        @include josefinFontNormal();
         color: $navigationMenuTextColor;
         text-decoration: none;
         text-transform: uppercase;
@@ -30,11 +32,11 @@ $captionSecondColor: rgba($color: #05acd3, $alpha: 0.8);
         box-sizing: border-box;
         
         &--first {
-            background-color: $primaryColor;
+            background-color: $primaryLeftColor;
         }
         
         &--second {
-            background-color: $secondaryColor;
+            background-color: $primaryRightColor;
         }
     }
     
@@ -43,11 +45,11 @@ $captionSecondColor: rgba($color: #05acd3, $alpha: 0.8);
         height: 9px;
         
         &--first {
-            background-color: $primaryColor;
+            background-color: $primaryLeftColor;
         }
         
         &--second {
-            background-color: $secondaryColor;
+            background-color: $primaryRightColor;
         }
     }
        
@@ -70,7 +72,7 @@ $captionSecondColor: rgba($color: #05acd3, $alpha: 0.8);
     &__captions-container {
         font-size: 18px;
         line-height: 18px;
-        font-family: $openSans;
+        @include josefinFontNormal();
         letter-spacing: 3px;
         text-align: center;
         height: 38px;
