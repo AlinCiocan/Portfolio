@@ -353,6 +353,10 @@ td,
 th {
   padding: 0; }
 
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
 .navigation-menu {
   margin-top: -1px; }
   .navigation-menu__link {
@@ -415,5 +419,34 @@ th {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.article-preview-list {
+  margin: 0 28px; }
+
+.article-preview {
+  margin-bottom: 36px; }
+  .article-preview__title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+    color: white;
+    background-color: #ad7cfc;
+    border-bottom: 2px solid white;
+    margin-bottom: 0;
+    padding: 8px 8px; }
+  .article-preview__content-container {
+    background-color: rgba(173, 124, 252, 0.3);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 25px;
+    padding: 10px 15px;
+    letter-spacing: 0.5px; }
+  .article-preview__content {
+    margin-bottom: 8px; }
+  .article-preview__read-more {
+    color: #c6198b;
+    text-decoration: none; }
 
 /*# sourceMappingURL=layout.css.map */
