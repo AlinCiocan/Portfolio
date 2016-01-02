@@ -13,11 +13,15 @@ $captionFirstColor: rgba($color: #c6198b, $alpha: 0.8);
 $captionSecondColor: rgba($color: #05acd3, $alpha: 0.8);
 
 .navigation-menu {
+   
+   // TODO: rething the navigation bottom line
+   // This is a quickfix for Android Chrome browser (it appears a white line without this negative marghin)
+    margin-top: -1px;
     
     &__link {
         font-size: 25px;
         line-height: 25px;
-        letter-spacing: 3px;
+        letter-spacing: -2px;
         @include josefinFontNormal();
         color: $navigationMenuTextColor;
         text-decoration: none;
@@ -37,6 +41,11 @@ $captionSecondColor: rgba($color: #05acd3, $alpha: 0.8);
         
         &--second {
             background-color: $primaryRightColor;
+        }
+        
+        &--active {
+            font-size: 28px;
+            padding-top: 16px;
         }
     }
     
